@@ -1,0 +1,31 @@
+body { /* Styles the whole page */
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f5; /* Light grey-green page background */
+    margin: 0; 
+    padding: 30px; /* Adds 30px of space inside the page edges */
+}
+
+h1 {
+    color: #2d6a4f; /* Dark green for the main title */
+}
+
+.sensor-container {
+    display: grid; /* Arranges the cards in a grid */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* As many columns as fit; each at least 180px wide, sharing leftover space equally. This makes cards wrap on narrow screens */
+    gap: 20px; /* 20px of space between cards */
+}
+
+.sensor-card { /* Styles every card */
+    background-color: white;
+    padding: 20px; /* Space between the card edge and its text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Soft shadow: no sideways offset, 2px down, 6px blur, 10% black */
+}
+
+.sensor-card h3 { /* Styles headings inside a card */
+    color: #555; /* Dark grey title text */
+}
+.sensor-card p { /* Styles the readingsinside a card */
+    font-size: 24px;
+    font-weight: bold;
+}

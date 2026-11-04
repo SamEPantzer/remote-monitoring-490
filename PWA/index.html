@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <!-- Character encoding so symbols display correctly -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page fit the device screen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Environmental Monitoring</title>
+
+    <!-- Links the stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Links the web app manifest -->
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <!-- Page title and intro -->
+    <h1>Environmental Monitoring System</h1>
+    <p>Welcome to your monitoring dashboard.</p>
+
+    <h2>Current Sensor Readings</h2>
+
+    <!--A box that holds all five cards; CSS arranges them in a grid by this class name -->
+    <div class="sensor-container">
+        
+        <div class="sensor-card"> <!-- Starts the soil moisture card -->
+            <h3>Soil Moisture</h3>
+            <p id="moisture">65%</p> <!-- simulated value -->
+        </div>
+
+        <div class="sensor-card"> <!-- Starts the temperature card -->
+            <h3>Temperature</h3>
+            <p id="temperature">22°C</p> <!-- simulated value -->
+        </div>
+
+        <div class="sensor-card"> <!-- Starts the air quality card -->
+            <h3>Air Quality</h3>
+            <p id="airQuality">Good</p> <!-- simulated value -->
+        </div>
+
+        <div class="sensor-card"> <!-- Starts the air pressure card -->
+            <h3>Air Pressure</h3>
+            <p id="pressure">101.3 kPa</p> <!-- simulated value -->
+        </div>
+
+        <div class="sensor-card"> <!-- Starts the humidity card -->
+            <h3>Humidity</h3>
+            <p id="humidity">55%</p> <!-- simulated value -->
+        </div>
+
+    </div> <!-- Ends the container holding all cards -->
+    <!-- Loads the script -->
+    <script src="script.js"></script>
+</body>
+</html>
